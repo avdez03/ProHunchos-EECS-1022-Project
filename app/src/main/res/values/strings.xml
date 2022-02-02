@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProHunchos</string>
+    <string name="title">What number am I thinking of?</string>
+    <string name="rules">How to play</string>
+    <string name="start">Start</string>
+    <string name="verify">Verify Guess</string>
+    <string name="music">Music Player</string>
+    <string name="howToPlay">User must choose a value. Then the user must guess a random value from 1 and the number they chose. The user must also input how many guesses they have. If the user guesses correctly then they win, but if they run out of guesses they lose.</string>
+    <string name="win">You have guessed correctly!!</string>
+    <string name="lose">You have guessed incorrectly :( Try Again</string>
+    <string name="end">You have run out of guesses</string>
+    <string name="celebrate">Congrats you have guessed the correct value</string>
+    <string name="leaderboard">Leader Board</string>
+</resources>
