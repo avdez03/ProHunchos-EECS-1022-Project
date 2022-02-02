@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /*
- * Author : Alex Valdez
+ * Author : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
  * Team : ProHunchos
  * LE EECS 1022 Project = "What number am I thinking about"?
  */
