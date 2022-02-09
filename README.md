@@ -29,25 +29,33 @@ Our group will create an application that allows the user to play a game called 
 
 
 Portrait Screen
+
 ![Portrait Screen@1x](https://user-images.githubusercontent.com/91922774/153235855-27bccaea-f84d-4717-b556-c62ee978b11e.png)
 
 Landscape Screen
+
 ![Landscapre Screen@1x](https://user-images.githubusercontent.com/91922774/153235884-6c09cf16-dc60-43c1-8d97-4082780c2ed1.png)
 
 How to play alert
+
 ![How to play alert@1x](https://user-images.githubusercontent.com/91922774/153235236-b8d680ea-f819-4b21-b488-0b0a10582e16.png)
 
 Win alert
+
 ![Win alert@1x](https://user-images.githubusercontent.com/91922774/153235961-cf1bad3d-05b5-4045-9080-ebed5346dc74.png)
 
 Loss alert
+
 ![Loss Alert@1x](https://user-images.githubusercontent.com/91922774/153236009-e7751ded-4706-4b81-a6cb-cdd1ec3f7594.png)
 
 Zero guesses remaining alert
+
 ![Zero guesses remaining alert@1x](https://user-images.githubusercontent.com/91922774/153236068-b08c2ca3-f258-4f19-8234-1030bcbefeee.png)
 
 User name alert
+
 ![User name Alert@1x](https://user-images.githubusercontent.com/91922774/153236103-3b9d6748-56d3-48ac-bddd-61aecddec9a7.png)
 
 Leader board alert
+
 ![Leaderboard Alert@1x](https://user-images.githubusercontent.com/91922774/153236141-ef7b922f-5f06-45cd-b629-9430d4d1c941.png)
