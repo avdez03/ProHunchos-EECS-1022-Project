@@ -26,6 +26,8 @@ Our group will create an application that allows the user to play a game called 
 13. When the user guesses incorrectly text will be altered below the “Verify guess” button informing the user they have guessed incorrectly.
 
 **Project Design**
+
+
 Portrait Screen
 ![Portrait Screen@1x](https://user-images.githubusercontent.com/91922774/153235855-27bccaea-f84d-4717-b556-c62ee978b11e.png)
 
