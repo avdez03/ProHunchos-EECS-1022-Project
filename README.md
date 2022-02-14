@@ -29,33 +29,32 @@ Our group will create an application that allows the user to play a game called 
 
 
 Portrait Screen
+ ![Portrait Screen](https://user-images.githubusercontent.com/91922774/153955815-064cc231-d770-48c5-ba93-a36208ff9771.png)
 
-![Portrait Screen@1x](https://user-images.githubusercontent.com/91922774/153235855-27bccaea-f84d-4717-b556-c62ee978b11e.png)
 
 Landscape Screen
+![Landscapre Screen](https://user-images.githubusercontent.com/91922774/153955863-04441279-ba9b-4dd8-aae8-feb7d80f98b9.png)
 
-![Landscapre Screen@1x](https://user-images.githubusercontent.com/91922774/153235884-6c09cf16-dc60-43c1-8d97-4082780c2ed1.png)
 
 How to play alert
+![How to play alert](https://user-images.githubusercontent.com/91922774/153955884-780b5d77-95dc-42e4-aacc-76a3304f513c.png)
 
-![How to play alert@1x](https://user-images.githubusercontent.com/91922774/153235236-b8d680ea-f819-4b21-b488-0b0a10582e16.png)
 
 Win alert
+![Win alert](https://user-images.githubusercontent.com/91922774/153955916-444dafb1-4f40-4680-8905-85d6fb97d769.png)
 
-![Win alert@1x](https://user-images.githubusercontent.com/91922774/153235961-cf1bad3d-05b5-4045-9080-ebed5346dc74.png)
 
 Loss alert
+![Loss Alert](https://user-images.githubusercontent.com/91922774/153955935-6c66ad2e-f27e-47d2-a559-eb57a3072a8a.png)
 
-![Loss Alert@1x](https://user-images.githubusercontent.com/91922774/153236009-e7751ded-4706-4b81-a6cb-cdd1ec3f7594.png)
 
 Zero guesses remaining alert
+![Zero guesses remaining alert](https://user-images.githubusercontent.com/91922774/153955955-4c6fb43d-a59f-420b-882e-f4eedace27af.png)
 
-![Zero guesses remaining alert@1x](https://user-images.githubusercontent.com/91922774/153236068-b08c2ca3-f258-4f19-8234-1030bcbefeee.png)
 
 User name alert
+![User name Alert](https://user-images.githubusercontent.com/91922774/153955987-75f953f8-0adb-43a3-860d-a6912d4c8225.png)
 
-![User name Alert@1x](https://user-images.githubusercontent.com/91922774/153236103-3b9d6748-56d3-48ac-bddd-61aecddec9a7.png)
 
 Leader board alert
-
-![Leaderboard Alert@1x](https://user-images.githubusercontent.com/91922774/153236141-ef7b922f-5f06-45cd-b629-9430d4d1c941.png)
+![Leaderboard Alert](https://user-images.githubusercontent.com/91922774/153956006-340c80a2-ed4d-48d3-aeb3-6bdedfeb4c94.png)
