@@ -198,8 +198,7 @@ public class MainActivity extends AppCompatActivity {
     }//end check()
 
     /*
-    //https://www.youtube.com/watch?v=aQAIMY-HzL8&list=LL&index=3
-    //Use this link to create a list of winners names and their amount of guesses
+    //Create a list of winners names and their amount of guesses
     //So that when a user wins their name can be inputted into this list
     //Then can be accessed through the click of a button
     public void leaderboard(View v) {
