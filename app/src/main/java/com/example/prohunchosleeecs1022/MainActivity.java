@@ -15,7 +15,7 @@ import android.widget.TextView;
 /*
  * Author : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
  * Team : ProHunchos
- * LE EECS 1022 Project = "What number am I thinking about"?
+ * LE EECS 1022 Project = "What number am I thinking of"?
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    //write your play music code here
+                    //will play theme music
                     themeMP.start();
                 }//end if statement
 
                 if (!isChecked) {
-                    // write your music pause code here
+                    //will pause the theme music
                     themeMP.stop();
                 }//end if statement
 
