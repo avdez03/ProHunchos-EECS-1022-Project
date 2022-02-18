@@ -27,49 +27,5 @@ Our group will create an application that allows the user to play a game called 
 
 **Project Design**
 
+![image](https://user-images.githubusercontent.com/91922774/154771049-c2f93442-5fc8-4d20-b895-5ab0e5ed5258.png)
 
-Portrait Screen
-
- ![Portrait Screen](https://user-images.githubusercontent.com/91922774/153955815-064cc231-d770-48c5-ba93-a36208ff9771.png)
-
-
-
-Landscape Screen
-
-![Landscapre Screen](https://user-images.githubusercontent.com/91922774/153955863-04441279-ba9b-4dd8-aae8-feb7d80f98b9.png)
-
-
-
-How to play alert
-
-![How to play alert](https://user-images.githubusercontent.com/91922774/153955884-780b5d77-95dc-42e4-aacc-76a3304f513c.png)
-
-
-
-Win alert
-
-![Win alert](https://user-images.githubusercontent.com/91922774/153955916-444dafb1-4f40-4680-8905-85d6fb97d769.png)
-
-
-
-Loss alert
-
-![Loss Alert](https://user-images.githubusercontent.com/91922774/153955935-6c66ad2e-f27e-47d2-a559-eb57a3072a8a.png)
-
-
-
-Zero guesses remaining alert
-
-![Zero guesses remaining alert](https://user-images.githubusercontent.com/91922774/153955955-4c6fb43d-a59f-420b-882e-f4eedace27af.png)
-
-
-
-User name alert
-
-![User name Alert](https://user-images.githubusercontent.com/91922774/153955987-75f953f8-0adb-43a3-860d-a6912d4c8225.png)
-
-
-
-Leader board alert
-
-![Leaderboard Alert](https://user-images.githubusercontent.com/91922774/153956006-340c80a2-ed4d-48d3-aeb3-6bdedfeb4c94.png)
