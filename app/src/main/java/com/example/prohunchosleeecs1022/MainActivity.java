@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 /*
  * Author : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
- * Team : ProHunchos
+ * Team Name : ProHunchos
  * LE EECS 1022 Project = "What number am I thinking of"?
  */
 
