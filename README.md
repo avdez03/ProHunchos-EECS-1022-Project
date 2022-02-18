@@ -27,5 +27,6 @@ Our group will create an application that allows the user to play a game called 
 
 **Project Design**
 
-![image](https://user-images.githubusercontent.com/91922774/154771049-c2f93442-5fc8-4d20-b895-5ab0e5ed5258.png)
+![LE EECS 1022 Wireframes](https://user-images.githubusercontent.com/91922774/154771089-c2eea13b-fbe1-4f67-8443-2246f3df558e.jpg)
+
 
