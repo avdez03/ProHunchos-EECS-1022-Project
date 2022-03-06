@@ -104,8 +104,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int whichButton) {
                 String value = input.getText().toString();
                 random = ProjectModel.getRandom(ProjectModel.toDouble(value));
-                TextView randomText = (findViewById(R.id.random));
-                randomText.setText(ProjectModel.format(random));
             }//end onClick()
         });
         alert.show();
@@ -164,8 +162,6 @@ public class MainActivity extends AppCompatActivity {
                 alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         String value = userName.getText().toString();
-                        TextView name = (findViewById(R.id.name));
-                        name.setText(value);
                         winners.add(value);
                     }//end onClick()
                 });

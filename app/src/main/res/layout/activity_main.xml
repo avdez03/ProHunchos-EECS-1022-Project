@@ -8,18 +8,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/random"
-        android:layout_width="44dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="48dp"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,20 +54,6 @@
         app:layout_constraintHorizontal_bias="0.259"
         app:layout_constraintStart_toEndOf="@+id/verifyGuess"
         app:layout_constraintTop_toBottomOf="@+id/guessBox" />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="94dp"
-        android:layout_height="74dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="52dp"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/musicPlayer"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/guessBox"
