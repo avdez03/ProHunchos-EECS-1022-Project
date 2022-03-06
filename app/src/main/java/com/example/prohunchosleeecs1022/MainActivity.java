@@ -12,6 +12,9 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * Author : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
  * Team Name : ProHunchos
@@ -81,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
     //Global variable that will be changed to the amount of guesses the user has in startGame()
     //So that check knows what the amount of guesses the user has is
     double counter = 0;
+
+    List<String> winners = new ArrayList<>();
 
     //Receive the upper limit from the user and the amount of guesses
     //Then use getRandom from ProjectModel.java to generate a random number from one and the user's upper limit
@@ -161,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
                         String value = userName.getText().toString();
                         TextView name = (findViewById(R.id.name));
                         name.setText(value);
+                        winners.add(value);
                     }//end onClick()
                 });
                 alert.show();
@@ -197,13 +203,34 @@ public class MainActivity extends AppCompatActivity {
         }//end if statement
     }//end check()
 
-    /*
     //Create a list of winners names and their amount of guesses
     //So that when a user wins their name can be inputted into this list
     //Then can be accessed through the click of a button
     public void leaderboard(View v) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.leaderboardTitle);
 
+        builder.setItems(winners.toArray(new String[0]), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int item) {
+            }//end onClick
+        });
+
+        // Set Cancelable false for when the user clicks on
+        // the outside the Dialog Box then it will remain show
+        builder.setCancelable(false);
+
+        //Set the button on the dialog box with text close that will close the box
+        builder.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                // If user clicks close then dialog box is canceled.
+                dialog.cancel();
+            }//end onClick()
+        });
+        // Create the Alert dialog
+        AlertDialog alertDialog = builder.create();
+
+        // Show the Alert Dialog box
+        alertDialog.show();
     }//end leaderboard
-    **/
 
 }//end class
