@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
 
     List<String> winners = new ArrayList<>();
 
+    double highScore = 0;
+
     //Receive the upper limit from the user and the amount of guesses
     //Then use getRandom from ProjectModel.java to generate a random number from one and the user's upper limit
     public void startGame(View v) {
@@ -140,6 +142,8 @@ public class MainActivity extends AppCompatActivity {
 
         TextView guessCounter = (findViewById(R.id.counter));
 
+        TextView highScoreCounter = (findViewById(R.id.highScoreCounter));
+
         //To keep track if the user has guessed correctly
         boolean win = false;
 
@@ -149,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
             if (guess == random) {
                 answer.setText(R.string.win);
                 win = true;
+
                 //Will receive the user's name
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
 
@@ -163,6 +168,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         String value = userName.getText().toString();
                         winners.add(value);
+                        //Checks if the user has beaten the high score
+                        if (counter > highScore) {
+                            highScoreCounter.setText(value);
+                        }//end if statement
                     }//end onClick()
                 });
                 alert.show();

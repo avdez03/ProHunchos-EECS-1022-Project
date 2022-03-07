@@ -12,4 +12,5 @@
     <string name="celebrate">Congrats you have guessed the correct value</string>
     <string name="leaderboard">Leader Board</string>
     <string name="leaderboardTitle">Names of winners</string>
+    <string name="highScore">Highest Score!</string>
 </resources>
