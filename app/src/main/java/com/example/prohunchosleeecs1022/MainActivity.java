@@ -29,20 +29,28 @@ public class MainActivity extends AppCompatActivity {
         //Declare music variable for the theme music
         MediaPlayer themeMP = MediaPlayer.create(this, R.raw.theme);
         CheckBox musicPlayer = findViewById(R.id.musicPlayer);
+        final int[] paused = new int[1];
         musicPlayer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             //Will play background music when the checkbox is checked
             //The music will stop when it is unchecked
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    //will play theme music
-                    themeMP.start();
+                if (!isChecked) {
+                    //will pause the theme music and keep track of when the track was paused
+                    themeMP.pause();
+                    paused[0] = themeMP.getCurrentPosition();
                 }//end if statement
 
-                if (!isChecked) {
-                    //will pause the theme music
-                    themeMP.stop();
+                if (isChecked) {
+                    //will play theme music and loop it
+                    if (themeMP == null) {
+                        themeMP.setLooping(true);
+                        themeMP.start();
+                    } else if (!themeMP.isPlaying()) {
+                        themeMP.seekTo(paused[0]);
+                        themeMP.start();
+                    }
                 }//end if statement
 
             }//end onCheckedChanged()
