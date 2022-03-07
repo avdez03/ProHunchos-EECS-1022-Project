@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Declare music variable for the theme music
         MediaPlayer themeMP = MediaPlayer.create(this, R.raw.theme);
-        CheckBox musicPlayer = (CheckBox) findViewById(R.id.musicPlayer);
+        CheckBox musicPlayer = findViewById(R.id.musicPlayer);
         musicPlayer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             //Will play background music when the checkbox is checked
