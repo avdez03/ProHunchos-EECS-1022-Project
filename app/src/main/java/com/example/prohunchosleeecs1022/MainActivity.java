@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
                 alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         String value = userName.getText().toString();
-                        winners.add(value);
+                        winners.add(value);//add users name to list of winners
                         //Checks if the user has beaten the high score
                         if (counter > highScore) {
                             highScoreCounter.setText(value);
@@ -215,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.leaderboardTitle);
 
+        //Will add the array to the dialog box
         builder.setItems(winners.toArray(new String[0]), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int item) {
             }//end onClick
