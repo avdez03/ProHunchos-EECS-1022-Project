@@ -87,7 +87,11 @@ public class MainActivity extends AppCompatActivity {
 
     List<String> winners = new ArrayList<>();
 
+    //Keep track of the high score
     double highScore = 0;
+
+    //To keep track of the amount of guesses the user has used
+    double amountOfGuesses = 0;
 
     //Receive the upper limit from the user and the amount of guesses
     //Then use getRandom from ProjectModel.java to generate a random number from one and the user's upper limit
@@ -150,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
         //Will check if the user has guessed correctly
         //As long as they have guesses remaining
         if (counter != 0) {
+            amountOfGuesses++;
             if (guess == random) {
                 answer.setText(R.string.win);
                 win = true;
@@ -160,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
                 alert.setTitle("Congratulations");
                 alert.setMessage("You have won, please insert your name below?");
 
-                // Set an EditText view to get user input
+                //Set an EditText view to get user input
                 final EditText userName = new EditText(this);
                 alert.setView(userName);
 
@@ -169,8 +174,14 @@ public class MainActivity extends AppCompatActivity {
                         String value = userName.getText().toString();
                         winners.add(value);//add users name to list of winners
                         //Checks if the user has beaten the high score
-                        if (counter > highScore) {
+                        if (highScore == 0) {
                             highScoreCounter.setText(value);
+                            highScore = amountOfGuesses;
+                            amountOfGuesses = 0;
+                        } else if (amountOfGuesses < highScore) {
+                            highScoreCounter.setText(value);
+                            highScore = amountOfGuesses;
+                            amountOfGuesses = 0;
                         }//end if statement
                     }//end onClick()
                 });
@@ -178,6 +189,7 @@ public class MainActivity extends AppCompatActivity {
             } else if (guess != random) {
                 answer.setText(R.string.lose);
                 counter--;
+                amountOfGuesses++;
                 guessCounter.setText(ProjectModel.format(counter));
             }//end if statement
         }//end if statement
@@ -189,8 +201,8 @@ public class MainActivity extends AppCompatActivity {
             builder.setTitle("Tuff luck :(");
             builder.setMessage(R.string.end);
 
-            // Set Cancelable false for when the user clicks on
-            // the outside the Dialog Box then it will remain show
+            //Set Cancelable false for when the user clicks on
+            //the outside the Dialog Box then it will remain show
             builder.setCancelable(false);
 
             //Set the button on the dialog box with text close that will close the box
@@ -200,10 +212,10 @@ public class MainActivity extends AppCompatActivity {
                     dialog.cancel();
                 }//end onClick()
             });
-            // Create the Alert dialog
+            //Create the Alert dialog
             AlertDialog alertDialog = builder.create();
 
-            // Show the Alert Dialog box
+            //Show the Alert Dialog box
             alertDialog.show();
         }//end if statement
     }//end check()
@@ -215,14 +227,14 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.leaderboardTitle);
 
-        //Will add the array to the dialog box
+        //Will add the array of winners to the dialog box
         builder.setItems(winners.toArray(new String[0]), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int item) {
             }//end onClick
         });
 
-        // Set Cancelable false for when the user clicks on
-        // the outside the Dialog Box then it will remain show
+        //Set Cancelable false for when the user clicks on
+        //the outside the Dialog Box then it will remain show
         builder.setCancelable(false);
 
         //Set the button on the dialog box with text close that will close the box
@@ -232,10 +244,10 @@ public class MainActivity extends AppCompatActivity {
                 dialog.cancel();
             }//end onClick()
         });
-        // Create the Alert dialog
+        //Create the Alert dialog
         AlertDialog alertDialog = builder.create();
 
-        // Show the Alert Dialog box
+        //Show the Alert Dialog box
         alertDialog.show();
     }//end leaderboard
 
