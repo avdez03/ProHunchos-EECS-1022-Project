@@ -1,5 +1,11 @@
 package com.example.prohunchosleeecs1022;
 
+/*
+ * Author : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
+ * Team Name : ProHunchos
+ * LE EECS 1022 Project = "What number am I thinking of"?
+ */
+
 public class ProjectModel {
     //Generate a random number from 1 and the user's upper limit
     public static double getRandom(double upperValue) {

@@ -1,4 +1,10 @@
 <resources>
+
+    <!--
+  Author : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
+  Team Name : ProHunchos
+  LE EECS 1022 Project = "What number am I thinking of"?
+    -->
     <string name="app_name">ProHunchos</string>
     <string name="title">What number am I thinking of?</string>
     <string name="rules">How to play</string>

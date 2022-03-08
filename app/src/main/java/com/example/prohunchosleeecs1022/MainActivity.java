@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                         themeMP.start();
                     }
                 }//end if statement
-
             }//end onCheckedChanged()
         });
     }//end onCreate()
@@ -205,7 +204,6 @@ public class MainActivity extends AppCompatActivity {
         //Once the user runs out of guesses display it in an alert to inform the user
         if (!win && counter == 0) {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-
             builder.setTitle("Tuff luck :(");
             builder.setMessage(R.string.end);
 
