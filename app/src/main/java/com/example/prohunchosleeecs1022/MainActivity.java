@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
     //So that check knows what the amount of guesses the user has is
     double counter = 0;
 
+    //Array that contains the name of all the winners
     List<String> winners = new ArrayList<>();
 
     //Keep track of the high score
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         alert.setTitle("Upper limit?");
         alert.setMessage("What's the upper limit?");
 
-        // Set an EditText view to get user input
+        //Set an EditText view to get user input
         final EditText input = new EditText(this);
         alert.setView(input);
 
@@ -125,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         alert.setTitle("How many guesses?");
         alert.setMessage("Input the amount of guesses you have");
 
-        // Set an EditText view to get user input
+        //Set an EditText view to get user input
         final EditText guess = new EditText(this);
         alert.setView(guess);
 
