@@ -148,6 +148,7 @@
         android:layout_marginBottom="48dp"
         android:text="@string/highScore"
         android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/musicPlayer"
         app:layout_constraintStart_toStartOf="parent" />
@@ -160,6 +161,7 @@
         android:layout_marginLeft="88dp"
         android:layout_marginBottom="8dp"
         android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/musicPlayer"
         app:layout_constraintStart_toStartOf="parent" />
