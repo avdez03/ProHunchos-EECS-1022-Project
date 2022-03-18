@@ -26,5 +26,5 @@ public class ProjectModel {
         String answer;
         answer = Double.toString(value);
         return answer;
-    }//formatBMI()
+    }//format()
 }//end ProjectModel()
