@@ -1,7 +1,7 @@
 package com.example.prohunchosleeecs1022;
 
 /*
- * Author : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
+ * Authors : Alex Valdez, Huy Anh Vu Tran , Khandker Hasan
  * Team Name : ProHunchos
  * LE EECS 1022 Project = "What number am I thinking of"?
  */
